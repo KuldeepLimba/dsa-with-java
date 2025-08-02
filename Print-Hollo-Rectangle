@@ -1,0 +1,23 @@
+public class Patterns {
+    public static void Hollo_Rectangel(int totRows, int totColm) {
+
+        //outer loop
+        for(int i=1; i<=totRows; i++) {
+            //inner loop
+            for(int j=1; j<=totColm; j++) {
+                //cell-(i,j)
+                if(i == 1 || i == totRows || j == 1 || j == totColm) {
+                    //boundary cells
+                    System.out.print("*");
+                } else {
+                    System.out.print(" ");
+                }
+            }
+            System.out.println();
+        }
+    }
+
+    public static void main(String[] args) {
+        Hollo_Rectangel(4,5);
+    }
+}
